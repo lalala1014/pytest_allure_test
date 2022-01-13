@@ -1,0 +1,13 @@
+host:
+
+getXyhUser:
+  name: 获取登录信息
+  method: get
+  url:
+  data:
+    schoolId:
+  headers:
+    Content-Type: application/json
+  expected:
+    success: true
+

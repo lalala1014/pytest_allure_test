@@ -1,0 +1,11 @@
+[ {
+  "uid" : "df6d4dfaf357a7ea",
+  "name" : "test_login[getXyhUser]",
+  "time" : {
+    "start" : 1641984872678,
+    "stop" : 1641984872678,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

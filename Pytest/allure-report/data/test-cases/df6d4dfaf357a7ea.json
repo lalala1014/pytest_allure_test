@@ -1,0 +1,181 @@
+{
+  "uid" : "df6d4dfaf357a7ea",
+  "name" : "test_login[getXyhUser]",
+  "fullName" : "testcase.test_login.TestLogin#test_login",
+  "historyId" : "fd81c3b79ab52e82b7d1bfa2b1dc3af7",
+  "time" : {
+    "start" : 1641984872678,
+    "stop" : 1641984872678,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+  "statusTrace" : "self = <test_login.TestLogin object at 0x7f98604a7790>, api_name = 'getXyhUser'\ninit_login = <Pytest.api.app_api.AllApi object at 0x7f98604a76d0>\n\n    @allure.story(\"测试test_login\")\n    @pytest.mark.parametrize(\"api_name\", [\"getXyhUser\"])\n    def test_login(self, api_name, init_login):\n        print(\"2222222\")\n        r = init_login.send_request(api_name)\n        print(r)\n>       res = json.loads(init_login.send_request(api_name))\n\ntestcase/test_login.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = None, cls = None, object_hook = None, parse_float = None, parse_int = None\nparse_constant = None, object_pairs_hook = None, kw = {}\n\n    def loads(s, *, cls=None, object_hook=None, parse_float=None,\n            parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):\n        \"\"\"Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance\n        containing a JSON document) to a Python object.\n    \n        ``object_hook`` is an optional function that will be called with the\n        result of any object literal decode (a ``dict``). The return value of\n        ``object_hook`` will be used instead of the ``dict``. This feature\n        can be used to implement custom decoders (e.g. JSON-RPC class hinting).\n    \n        ``object_pairs_hook`` is an optional function that will be called with the\n        result of any object literal decoded with an ordered list of pairs.  The\n        return value of ``object_pairs_hook`` will be used instead of the ``dict``.\n        This feature can be used to implement custom decoders.  If ``object_hook``\n        is also defined, the ``object_pairs_hook`` takes priority.\n    \n        ``parse_float``, if specified, will be called with the string\n        of every JSON float to be decoded. By default this is equivalent to\n        float(num_str). This can be used to use another datatype or parser\n        for JSON floats (e.g. decimal.Decimal).\n    \n        ``parse_int``, if specified, will be called with the string\n        of every JSON int to be decoded. By default this is equivalent to\n        int(num_str). This can be used to use another datatype or parser\n        for JSON integers (e.g. float).\n    \n        ``parse_constant``, if specified, will be called with one of the\n        following strings: -Infinity, Infinity, NaN.\n        This can be used to raise an exception if invalid JSON numbers\n        are encountered.\n    \n        To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``\n        kwarg; otherwise ``JSONDecoder`` is used.\n        \"\"\"\n        if isinstance(s, str):\n            if s.startswith('\\ufeff'):\n                raise JSONDecodeError(\"Unexpected UTF-8 BOM (decode using utf-8-sig)\",\n                                      s, 0)\n        else:\n            if not isinstance(s, (bytes, bytearray)):\n>               raise TypeError(f'the JSON object must be str, bytes or bytearray, '\n                                f'not {s.__class__.__name__}')\nE               TypeError: the JSON object must be str, bytes or bytearray, not NoneType\n\n/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py:339: TypeError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "init_login",
+    "time" : {
+      "start" : 1641984872677,
+      "stop" : 1641984872677,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试test_login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "wangzaideMacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "1095-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_name",
+    "value" : "'getXyhUser'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a588f2feaf1d6f26",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984812606,
+        "stop" : 1641984812606,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7c590e640825c3d1",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984800354,
+        "stop" : 1641984800354,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "62de1ecb8b6ea90f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984782005,
+        "stop" : 1641984782005,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "aa13004a009a2159",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984724376,
+        "stop" : 1641984724376,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d73634fa624ca247",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984709304,
+        "stop" : 1641984709304,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "178ec5427253ea99",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984557818,
+        "stop" : 1641984557818,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fc1d6cf2c07e42ba",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984253005,
+        "stop" : 1641984253005,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f2773f76fd900d20",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984074496,
+        "stop" : 1641984074496,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c200ba3ed559c991",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641983907438,
+        "stop" : 1641983907438,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a7ab8cd3e8dde6d9",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641980308659,
+        "stop" : 1641980308659,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bf75a146b35c7f7b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641980235003,
+        "stop" : 1641980235003,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "df6d4dfaf357a7ea.json",
+  "parameterValues" : [ "'getXyhUser'" ]
+}

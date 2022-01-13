@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "children" : [ {
+        "name" : "test_login[getXyhUser]",
+        "uid" : "df6d4dfaf357a7ea",
+        "parentUid" : "7da79e8fc376b9087c95024f4bafecc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1641984872678,
+          "stop" : 1641984872678,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "'getXyhUser'" ]
+      } ],
+      "uid" : "7da79e8fc376b9087c95024f4bafecc7"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

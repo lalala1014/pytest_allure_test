@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "testcase.test_login",
+    "children" : [ {
+      "name" : "test_login[getXyhUser]",
+      "uid" : "df6d4dfaf357a7ea",
+      "parentUid" : "cc0ea573530a3fefba2a1fc590840070",
+      "status" : "broken",
+      "time" : {
+        "start" : 1641984872678,
+        "stop" : 1641984872678,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ "'getXyhUser'" ]
+    } ],
+    "uid" : "testcase.test_login"
+  } ],
+  "name" : "packages"
+}

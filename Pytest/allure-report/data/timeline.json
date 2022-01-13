@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "wangzaideMacBook-Air.local",
+    "children" : [ {
+      "name" : "1095-MainThread",
+      "children" : [ {
+        "name" : "test_login[getXyhUser]",
+        "uid" : "df6d4dfaf357a7ea",
+        "parentUid" : "827e65d649f1b2624d68ef8de8ef5492",
+        "status" : "broken",
+        "time" : {
+          "start" : 1641984872678,
+          "stop" : 1641984872678,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "'getXyhUser'" ]
+      } ],
+      "uid" : "827e65d649f1b2624d68ef8de8ef5492"
+    } ],
+    "uid" : "71e5bc434330687b993b0d66fbfcb36d"
+  } ],
+  "name" : "timeline"
+}

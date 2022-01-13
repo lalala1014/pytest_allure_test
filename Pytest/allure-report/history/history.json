@@ -1,0 +1,22 @@
+{
+  "fd81c3b79ab52e82b7d1bfa2b1dc3af7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df6d4dfaf357a7ea",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not NoneType",
+      "time" : {
+        "start" : 1641984872678,
+        "stop" : 1641984872678,
+        "duration" : 0
+      }
+    } ]
+  }
+}
